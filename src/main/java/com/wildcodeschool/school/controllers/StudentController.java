@@ -8,6 +8,7 @@ public class StudentController {
     private StudentRepository repository = new StudentRepository();
 
     // TODO : create a route "/" to the home page
+    // TODO : and send the school name : South Park Elementary
 
     // TODO : create a route "/list" to the student list
 
