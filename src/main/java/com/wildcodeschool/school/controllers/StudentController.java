@@ -9,6 +9,9 @@ public class StudentController {
 
     // TODO : create a route "/" to the home page
     // TODO : and send the school name : South Park Elementary
+    public void home() {
+        String schoolName = "South Park Elementary";
+    }
 
     // TODO : create a route "/list" to the student list
 
