@@ -9,8 +9,8 @@ public class StudentRepository {
 
     private static List<Student> students = new ArrayList<Student>() {{
         add(new Student(0L, "Eric", "Cartman", 11));
-        add(new Student(0L, "Stan", "Marsh", 11));
-        add(new Student(0L, "Kyle", "Broflovski", 11));
+        add(new Student(1L, "Stan", "Marsh", 11));
+        add(new Student(2L, "Kyle", "Broflovski", 11));
     }};
 
     public List<Student> findAll() {
