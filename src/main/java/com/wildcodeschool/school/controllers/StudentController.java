@@ -7,13 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class StudentController {
 
+    private static final String SCHOOL_NAME = "South Park Elementary";
+
     // use this to load students
-    private StudentRepository repository = new StudentRepository();
+    private StudentRepository studentRepository = new StudentRepository();
 
     // TODO : send the school name to the index page
     @GetMapping("/")
     public String index() {
-        String schoolName = "South Park Elementary";
         return "index";
     }
 
