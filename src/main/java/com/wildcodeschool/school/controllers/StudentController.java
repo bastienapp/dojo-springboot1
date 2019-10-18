@@ -1,10 +1,7 @@
 package com.wildcodeschool.school.controllers;
 
 import com.wildcodeschool.school.repositories.StudentRepository;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
 public class StudentController {
 
     private static final String SCHOOL_NAME = "South Park Elementary";
@@ -12,11 +9,7 @@ public class StudentController {
     // use this to load students
     private StudentRepository studentRepository = new StudentRepository();
 
-    // TODO : send the school name to the index page
-    @GetMapping("/")
-    public String index() {
-        return "index";
-    }
+    // TODO : create a route "/" and send the school name to the index
 
     // TODO : create a route "/list" to the student list
 
