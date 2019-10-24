@@ -7,8 +7,8 @@
 <body>
 <!-- TODO : show the school name -->
 <h3>Welcome to</h3>
-<h1>$schoolName!</h1>
+<h1 th:text="${schoolName}">$schoolName!</h1>
 <!-- TODO : modify the link -->
-<a href="#list">Go to our student list</a>
+<a th:href="@{/list}">Go to our student list</a>
 </body>
 </html>

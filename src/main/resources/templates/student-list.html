@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Student List</title>
 </head>
 <body>
 <h3>Here are our students :</h3>
-<!-- TODO : show the student list -->
+
 <ul>
-    <li>
-        <span>$firstName</span>
-        <span>$lastName</span>
-        <a href="#infos">More infos</a>
+    <li th:each="student : ${studentList}">
+        <span th:text="${student.firstName}">firstName</span>
+        <span th:text="${student.lastName}">lastName</span>
+        <a href="#">More infos</a>
     </li>
 </ul>
 </body>
